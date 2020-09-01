@@ -5,16 +5,17 @@ class App extends Component{
 	constructor(){
 	    super();
 	    this.state={
-	      open: false,
-	      setOpen: false
-	
+	      open: false
 	    }
 	  }
 
+	setOpen = (x) => {
+		this.setState({open: x})
+	}	  
+
   render(){
     return (
-    	<example open={this.state.open} setOpen={this.stae.setOpen} />
-  
+    	<example open={this.state.open} setOpen={this.setOpen} />
     );    
   }
 
