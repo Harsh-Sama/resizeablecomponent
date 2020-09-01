@@ -3,11 +3,10 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Collapse from 'react-bootstrap/Collapse'
 import { Button} from 'react-bootstrap';
 
-const example = () => {
-		const [open, setOpen] = React.useState(false);
-
+const example = ({open, setOpen}) => {
+		
 		return(
-			<div>
+			<div> 
 			
 			<Button
 		        onClick={() => setOpen(!open)}
