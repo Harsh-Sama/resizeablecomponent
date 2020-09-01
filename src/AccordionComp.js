@@ -5,7 +5,7 @@ import { Button } from 'react-bootstrap';
 import './AccordionComp.css';
 import down from './down.svg' 
 
-const AccordionComp = () => {
+const AccordionComp = (props) => {
 		
 		return(
 			<Accordion defaultActiveKey="0">
@@ -19,7 +19,7 @@ const AccordionComp = () => {
 			    </div> 
 			    </Card.Header>
 			    <Accordion.Collapse eventKey="0">
-			      <Card.Body>Hello! I'm the body</Card.Body>
+			      <Card.Body>{props.children}</Card.Body> 
 			    </Accordion.Collapse>
 			  </Card>
 			  
