@@ -3,6 +3,7 @@ import Accordion from 'react-bootstrap/Accordion'
 import { Card } from 'react-bootstrap';
 import { Button } from 'react-bootstrap';
 import './AccordionComp.css';
+import down from './down.svg' 
 
 const AccordionComp = () => {
 		
@@ -13,7 +14,7 @@ const AccordionComp = () => {
 			    <div className="flex-div">
 				    <span>Showing Result For</span>
 				      <Accordion.Toggle as={Button} variant="link" eventKey="0">
-				        Showing Result For
+				        <img src={down} />
 				      </Accordion.Toggle>
 			    </div> 
 			    </Card.Header>
